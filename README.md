@@ -8,7 +8,8 @@ GeoDecode is a Go package that provides offline reverse geocoding. It allows you
 ## What it Does
 
 This package takes a geographic coordinate (latitude and longitude) and returns the name of the closest known city and its country code. It's designed for quick lookups using an embedded dataset.
-Features
+
+## Features
 
 - Offline Reverse Geocoding: Works without an internet connection after initial setup.
 
