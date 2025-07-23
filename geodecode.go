@@ -324,6 +324,8 @@ func (rg *RGeocoder) Query(coordinates ...[2]float64) []Location {
 // is found (e.g., input coordinate is invalid or no data is loaded).
 // The 'verbose' parameter controls logging for the internal geocoder instance.
 //
+// coordinate: [lat, lng]
+//
 // Example usage:
 //
 //	location := geodecode.FindLocation([2]float64{34.0522, -118.2437}, false) // Los Angeles
