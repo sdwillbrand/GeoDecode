@@ -330,7 +330,7 @@ func (rg *RGeocoder) Query(coordinates ...[2]float64) []Location {
 //
 //	location := geodecode.FindLocation([2]float64{34.0522, -118.2437}, false) // Los Angeles
 //	if location != nil {
-//	    fmt.Printf("City: %s, Country: %s\n", location.Name, location.CC)
+//	    fmt.Printf("City: %s, Country: %s\n", location.City, location.Country)
 //	}
 func FindLocation(coordinate [2]float64, verbose bool) *Location {
 	if coordinate[0] < -90 || coordinate[0] > 90 || coordinate[1] < -180 || coordinate[1] > 180 {
