@@ -229,8 +229,9 @@ func (rg *RGeocoder) loadData() {
 		log.Println("geodecode: Warning: No valid coordinates loaded.")
 		return
 	}
-
-	log.Printf("geodecode: Successfully parsed %d valid points from CSV.", len(parsedGeoPoints))
+	if rg.verbose {
+		log.Printf("geodecode: Successfully parsed %d valid points from CSV.", len(parsedGeoPoints))
+	}
 
 	if len(parsedGeoPoints) == 1 {
 		log.Println("geodecode: Only one valid coordinate loaded. KDTree will not be built.")
