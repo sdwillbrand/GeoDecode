@@ -22,7 +22,9 @@ Features
 
 To use GeoDecode in your Go project, you can install it using go get:
 
-```go get github.com/sdwillbrand/GeoDecode```
+```bash
+go get github.com/sdwillbrand/GeoDecode
+```
 
 ## Usage
 
