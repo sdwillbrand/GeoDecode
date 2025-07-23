@@ -1,5 +1,8 @@
 # GeoDecode
 
+![GitHub Release](https://img.shields.io/github/v/release/sdwillbrand/GeoDecode)
+[![Go Reference](https://pkg.go.dev/badge/github.com/sdwillbrand/GeoDecode.svg)](https://pkg.go.dev/github.com/sdwillbrand/GeoDecode)
+
 GeoDecode is a Go package that provides offline reverse geocoding. It allows you to find the nearest city and country for a given latitude and longitude coordinate.
 
 ## What it Does
