@@ -347,3 +347,15 @@ func FindLocation(coordinate [2]float64, verbose bool) *Location {
 	}
 	return nil
 }
+
+// GetCountryByCode returns the full country name for a given ISO country code (e.g., "US", "GB").
+// It uses the github.com/biter777/countries package for lookup.
+//
+// Example usage:
+//
+//	countryName := geodecode.GetCountryByCode("US")
+//	fmt.Println(countryName) // Output: United States
+func GetCountryByCode(code string) string {
+	country := countries.ByName(code)
+	return country.Info().Name
+}
